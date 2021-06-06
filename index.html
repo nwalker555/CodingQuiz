@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Assets/css/style.css">
+    <title>Coding Quiz</title>
+</head>
+
+<body>
+    <div>
+        <div id="scores"><a href="highscores.html">Highscores</a></div>
+        <div id="timer">Time: <span id="quiz-time"></span></div>
+
+        <div id="first-page">
+            <h1> Start Quiz</h1>
+            <p>Test your coding knowledge!!!</p>
+            <button id="start">Start Quiz</button>
+        </div>
+
+        <div id="questions" class="hide">
+            <h2 id="quiz-questions"></h2>
+            <form  id="options" class="options">
+                <button class="choice btn btn-primary" id="A" onclick ="checkAnswer('A')" ></button>
+                <button class="choice btn btn-primary" id="B" onclick ="checkAnswer('B')" ></button>
+                <button class="choice btn btn-primary" id="C" onclick ="checkAnswer('C')" ></button>
+                <button class="choice btn btn-primary" id="D" onclick ="checkAnswer('D')" ></button>
+            </form>
+        </div>
+
+        <div id="final-page" class="hide">
+            <h3>Congrats! You finished.</h2>
+                <p>Your score is:<span id="score"></span></p>
+                <p>Enter your name: <input></p>
+                <button id="submit"><a href="./highscores.html">Submit</a></button>
+        </div>
+        </div>
+    </div>
+</body>
+<script src="Assets/js/index.js"></script>
+</html>
